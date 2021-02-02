@@ -1,0 +1,8 @@
+
+
+################ACTUATOR
+#ACTUATOR SEV�SLER�N�N DEFAULT OLARAK ER���LMES� ENGELLER
+management:
+  endpoints:
+    enabled-by-default: false
+

@@ -1,0 +1,28 @@
+server:
+  port: 8585
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*"
+
+
+
+logging:
+  level:
+    org.springframework.web: trace
+  file: log/applicationlog.log
+
+spring:
+  mvc:
+    pathmatch:
+      use-registered-suffix-pattern: true
+    contentnegotiation:
+      favor-path-extension: true
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  thymeleaf:
+    enabled: false

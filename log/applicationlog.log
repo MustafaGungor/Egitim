@@ -1,0 +1,183 @@
+2021-02-03 00:19:41.081  INFO 14420 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-03 00:20:11.678  INFO 16444 --- [main] com.udemy.egitim.EgitimApplication       : Starting EgitimApplication on DESKTOP-5ITSG9I with PID 16444 (C:\projects\egitim\target\classes started by musta in C:\projects\egitim)
+2021-02-03 00:20:11.691  INFO 16444 --- [main] com.udemy.egitim.EgitimApplication       : The following profiles are active: dev
+2021-02-03 00:20:15.364  INFO 16444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$49cb2cb6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-03 00:20:16.220  INFO 16444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8585 (http)
+2021-02-03 00:20:16.303  INFO 16444 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-03 00:20:16.304  INFO 16444 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-02-03 00:20:17.150  INFO 16444 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-02-03 00:20:17.166  INFO 16444 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-03 00:20:17.167 DEBUG 16444 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2021-02-03 00:20:17.168  INFO 16444 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5288 ms
+2021-02-03 00:20:18.456 TRACE 16444 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2021-02-03 00:20:18.458 DEBUG 16444 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2021-02-03 00:20:19.065  INFO 16444 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-03 00:20:19.106 DEBUG 16444 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-02-03 00:20:19.238 TRACE 16444 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.u.e.w.PetClinicController:
+	{ /owners}: getOwners()
+	{ /pcs}: welcome()
+2021-02-03 00:20:19.248 TRACE 16444 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.u.e.w.PetClinicRestController:
+	{POST /rest/owner}: createOwner(Owner)
+	{DELETE /rest/owner/{id}}: deleteOwner(Long)
+	{GET /rest/owner/{id}}: getOwners(Long)
+	{GET /rest/owners}: getOwners()
+	{GET /rest/owner}: getOwners(String)
+	{PUT /rest/owner/{id}}: updateOwner(Long,Owner)
+2021-02-03 00:20:19.268 TRACE 16444 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2021-02-03 00:20:19.283 DEBUG 16444 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2021-02-03 00:20:19.298 DEBUG 16444 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2021-02-03 00:20:19.316 TRACE 16444 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2021-02-03 00:20:19.317 TRACE 16444 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2021-02-03 00:20:19.318 DEBUG 16444 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-02-03 00:20:19.347 DEBUG 16444 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-02-03 00:20:19.404  INFO 16444 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2021-02-03 00:20:20.085  INFO 16444 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2021-02-03 00:20:20.358  INFO 16444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8585 (http) with context path ''
+2021-02-03 00:20:20.368  INFO 16444 --- [main] com.udemy.egitim.EgitimApplication       : Started EgitimApplication in 10.766 seconds (JVM running for 16.853)
+2021-02-03 00:20:24.019  INFO 16444 --- [http-nio-8585-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-03 00:20:24.021  INFO 16444 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-03 00:20:24.022 TRACE 16444 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@4036798b
+2021-02-03 00:20:24.028 TRACE 16444 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2021-02-03 00:20:24.034 TRACE 16444 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2021-02-03 00:20:24.045 TRACE 16444 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2021-02-03 00:20:24.059 TRACE 16444 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2021-02-03 00:20:24.060 DEBUG 16444 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-02-03 00:20:24.061  INFO 16444 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 40 ms
+2021-02-03 00:20:24.139 TRACE 16444 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/rest/owner/2.json", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2021-02-03 00:20:24.197 TRACE 16444 --- [http-nio-8585-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<?> com.udemy.egitim.web.PetClinicRestController.getOwners(java.lang.Long)
+2021-02-03 00:20:24.285 TRACE 16444 --- [http-nio-8585-exec-1] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [2]
+2021-02-03 00:20:24.461 DEBUG 16444 --- [http-nio-8585-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/hal+json, application/hal+json;charset=UTF-8, application/json, application/json, application/*+json, application/json, application/*+json, application/xml, text/xml, application/*+xml]
+2021-02-03 00:20:24.464 TRACE 16444 --- [http-nio-8585-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Resource { content: Owner{id=2, firstName='Owner 2', lastName='LastName 2'}, links: [<http://localhost:8585/rest/owner/2>;rel="self", <http://localhost:8585/rest/owner>;rel="create", <http://localhost:8585/rest/owner/2>;rel="update", <http://localhost:8585/rest/owner/2>;rel="delete"] }]
+2021-02-03 00:20:24.600 TRACE 16444 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2021-02-03 00:20:24.603 DEBUG 16444 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2021-02-03 00:22:00.444 TRACE 16444 --- [http-nio-8585-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/rest/owner/2.json", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2021-02-03 00:22:00.469 TRACE 16444 --- [http-nio-8585-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<?> com.udemy.egitim.web.PetClinicRestController.getOwners(java.lang.Long)
+2021-02-03 00:22:00.470 TRACE 16444 --- [http-nio-8585-exec-4] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [2]
+2021-02-03 00:22:00.475 DEBUG 16444 --- [http-nio-8585-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/hal+json, application/hal+json;charset=UTF-8, application/json, application/json, application/*+json, application/json, application/*+json, application/xml, text/xml, application/*+xml]
+2021-02-03 00:22:00.477 TRACE 16444 --- [http-nio-8585-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Resource { content: Owner{id=2, firstName='Owner 2', lastName='LastName 2'}, links: [<http://localhost:8585/rest/owner/2>;rel="self", <http://localhost:8585/rest/owner>;rel="create", <http://localhost:8585/rest/owner/2>;rel="update", <http://localhost:8585/rest/owner/2>;rel="delete"] }]
+2021-02-03 00:22:00.482 TRACE 16444 --- [http-nio-8585-exec-4] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2021-02-03 00:22:00.483 DEBUG 16444 --- [http-nio-8585-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2021-02-03 00:22:00.935 TRACE 16444 --- [http-nio-8585-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2021-02-03 00:22:00.941 TRACE 16444 --- [http-nio-8585-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]] and 1 interceptors
+2021-02-03 00:22:01.007 TRACE 16444 --- [http-nio-8585-exec-5] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2021-02-03 00:22:01.008 DEBUG 16444 --- [http-nio-8585-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2021-02-03 00:22:16.522 TRACE 16444 --- [http-nio-8585-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/rest/owner/2", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2021-02-03 00:22:16.541 TRACE 16444 --- [http-nio-8585-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<?> com.udemy.egitim.web.PetClinicRestController.getOwners(java.lang.Long)
+2021-02-03 00:22:16.543 TRACE 16444 --- [http-nio-8585-exec-6] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [2]
+2021-02-03 00:22:16.547 DEBUG 16444 --- [http-nio-8585-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/xhtml+xml', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/hal+json, application/hal+json;charset=UTF-8, application/json, application/json, application/*+json, application/json, application/*+json, application/xml, text/xml, application/*+xml]
+2021-02-03 00:22:16.548 TRACE 16444 --- [http-nio-8585-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Resource { content: Owner{id=2, firstName='Owner 2', lastName='LastName 2'}, links: [<http://localhost:8585/rest/owner/2>;rel="self", <http://localhost:8585/rest/owner>;rel="create", <http://localhost:8585/rest/owner/2>;rel="update", <http://localhost:8585/rest/owner/2>;rel="delete"] }]
+2021-02-03 00:22:16.806 TRACE 16444 --- [http-nio-8585-exec-6] .w.s.m.m.a.ServletInvocableHandlerMethod : Error handling return value=[<200 OK OK,Resource { content: Owner{id=2, firstName='Owner 2', lastName='LastName 2'}, links: [<http://localhost:8585/rest/owner/2>;rel="self", <http://localhost:8585/rest/owner>;rel="create", <http://localhost:8585/rest/owner/2>;rel="update", <http://localhost:8585/rest/owner/2>;rel="delete"] },[]>], type=org.springframework.http.ResponseEntity in public org.springframework.http.ResponseEntity<?> com.udemy.egitim.web.PetClinicRestController.getOwners(java.lang.Long)
+
+org.springframework.http.converter.HttpMessageNotWritableException: Could not marshal [Resource { content: Owner{id=2, firstName='Owner 2', lastName='LastName 2'}, links: [<http://localhost:8585/rest/owner/2>;rel="self", <http://localhost:8585/rest/owner>;rel="create", <http://localhost:8585/rest/owner/2>;rel="update", <http://localhost:8585/rest/owner/2>;rel="delete"] }]: null; nested exception is javax.xml.bind.MarshalException
+ - with linked exception:
+[com.sun.istack.internal.SAXException2: class com.udemy.egitim.model.Owner nor any of its super class is known to this context.
+javax.xml.bind.JAXBException: class com.udemy.egitim.model.Owner nor any of its super class is known to this context.]
+	at org.springframework.http.converter.xml.AbstractXmlHttpMessageConverter.writeInternal(AbstractXmlHttpMessageConverter.java:90) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:227) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:293) ~[spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:225) ~[spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:122) ~[spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) [spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) [spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039) [spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) [spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) [spring-boot-actuator-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117) [spring-boot-actuator-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106) [spring-boot-actuator-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_241]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.19.jar:9.0.19]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_241]
+Caused by: javax.xml.bind.MarshalException: null
+	at com.sun.xml.internal.bind.v2.runtime.MarshallerImpl.write(MarshallerImpl.java:311) ~[na:1.8.0_241]
+	at com.sun.xml.internal.bind.v2.runtime.MarshallerImpl.marshal(MarshallerImpl.java:236) ~[na:1.8.0_241]
+	at org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter.writeToResult(Jaxb2RootElementHttpMessageConverter.java:182) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.http.converter.xml.AbstractXmlHttpMessageConverter.writeInternal(AbstractXmlHttpMessageConverter.java:84) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 61 common frames omitted
+Caused by: com.sun.istack.internal.SAXException2: class com.udemy.egitim.model.Owner nor any of its super class is known to this context.
+	at com.sun.xml.internal.bind.v2.runtime.XMLSerializer.reportError(XMLSerializer.java:232) ~[na:1.8.0_241]
+	at com.sun.xml.internal.bind.v2.runtime.XMLSerializer.reportError(XMLSerializer.java:247) ~[na:1.8.0_241]
+	at com.sun.xml.internal.bind.v2.runtime.property.SingleReferenceNodeProperty.serializeBody(SingleReferenceNodeProperty.java:102) ~[na:1.8.0_241]
+	at com.sun.xml.internal.bind.v2.runtime.ClassBeanInfoImpl.serializeBody(ClassBeanInfoImpl.java:345) ~[na:1.8.0_241]
+	at com.sun.xml.internal.bind.v2.runtime.XMLSerializer.childAsSoleContent(XMLSerializer.java:578) ~[na:1.8.0_241]
+	at com.sun.xml.internal.bind.v2.runtime.ClassBeanInfoImpl.serializeRoot(ClassBeanInfoImpl.java:326) ~[na:1.8.0_241]
+	at com.sun.xml.internal.bind.v2.runtime.XMLSerializer.childAsRoot(XMLSerializer.java:479) ~[na:1.8.0_241]
+	at com.sun.xml.internal.bind.v2.runtime.MarshallerImpl.write(MarshallerImpl.java:308) ~[na:1.8.0_241]
+	... 64 common frames omitted
+Caused by: javax.xml.bind.JAXBException: class com.udemy.egitim.model.Owner nor any of its super class is known to this context.
+	at com.sun.xml.internal.bind.v2.runtime.JAXBContextImpl.getBeanInfo(JAXBContextImpl.java:567) ~[na:1.8.0_241]
+	at com.sun.xml.internal.bind.v2.runtime.property.SingleReferenceNodeProperty.serializeBody(SingleReferenceNodeProperty.java:94) ~[na:1.8.0_241]
+	... 69 common frames omitted
+
+2021-02-03 00:22:16.826  WARN 16444 --- [http-nio-8585-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not marshal [Resource { content: Owner{id=2, firstName='Owner 2', lastName='LastName 2'}, links: [<http://localhost:8585/rest/owner/2>;rel="self", <http://localhost:8585/rest/owner>;rel="create", <http://localhost:8585/rest/owner/2>;rel="update", <http://localhost:8585/rest/owner/2>;rel="delete"] }]: null; nested exception is javax.xml.bind.MarshalException
+ - with linked exception:
+[com.sun.istack.internal.SAXException2: class com.udemy.egitim.model.Owner nor any of its super class is known to this context.
+javax.xml.bind.JAXBException: class com.udemy.egitim.model.Owner nor any of its super class is known to this context.]]
+2021-02-03 00:22:16.827 TRACE 16444 --- [http-nio-8585-exec-6] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2021-02-03 00:22:16.827 DEBUG 16444 --- [http-nio-8585-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR, headers={}
+2021-02-03 00:22:16.844 TRACE 16444 --- [http-nio-8585-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2021-02-03 00:22:16.855 TRACE 16444 --- [http-nio-8585-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+2021-02-03 00:22:16.857 TRACE 16444 --- [http-nio-8585-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-02-03 00:22:16.866 TRACE 16444 --- [http-nio-8585-exec-6] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [org.apache.catalina.core.ApplicationHttpRequest@4ef2f21d, org.apache.catalina.connector.ResponseFacade@3890cba7]
+2021-02-03 00:22:16.902 DEBUG 16444 --- [http-nio-8585-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2021-02-03 00:22:16.902 TRACE 16444 --- [http-nio-8585-exec-6] o.s.web.servlet.DispatcherServlet        : Rendering view [org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$StaticView@2b210b34] 
+2021-02-03 00:22:16.913 DEBUG 16444 --- [http-nio-8585-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500, headers={}
+2021-02-03 00:22:27.027 TRACE 16444 --- [http-nio-8585-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/rest/owner/2.json", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2021-02-03 00:22:27.040 TRACE 16444 --- [http-nio-8585-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<?> com.udemy.egitim.web.PetClinicRestController.getOwners(java.lang.Long)
+2021-02-03 00:22:27.042 TRACE 16444 --- [http-nio-8585-exec-7] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [2]
+2021-02-03 00:22:27.045 DEBUG 16444 --- [http-nio-8585-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/hal+json, application/hal+json;charset=UTF-8, application/json, application/json, application/*+json, application/json, application/*+json, application/xml, text/xml, application/*+xml]
+2021-02-03 00:22:27.046 TRACE 16444 --- [http-nio-8585-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Resource { content: Owner{id=2, firstName='Owner 2', lastName='LastName 2'}, links: [<http://localhost:8585/rest/owner/2>;rel="self", <http://localhost:8585/rest/owner>;rel="create", <http://localhost:8585/rest/owner/2>;rel="update", <http://localhost:8585/rest/owner/2>;rel="delete"] }]
+2021-02-03 00:22:27.049 TRACE 16444 --- [http-nio-8585-exec-7] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2021-02-03 00:22:27.050 DEBUG 16444 --- [http-nio-8585-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2021-02-03 00:36:00.425  INFO 16444 --- [Thread-17] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
